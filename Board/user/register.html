@@ -4,60 +4,6 @@
     <meta charset="UTF-8">
     <title>회원가입</title>
     <link rel="stylesheet" href="../css/style.css">
-
-    <style>
-
-        #user > .register {
-            width: 600px;
-            height: auto;
-            margin: 80px auto;
-        }
-        #user > .register > form {}
-
-        #user > .register > form > p {}
-
-        #user > .register > form > table {
-        width: 100%;
-        height: auto;
-        border-collapse: collapse;
-        border-spacing: 0;
-        border-top: 2px solid #111;
-
-        }
-        #user > .register > form > table > caption {
-            width: 100%;
-            height: 33.6px;
-            text-align: left;
-            font-weight: bold;
-            padding: 10px 0;
-            box-sizing: border-box;
-
-        }
-        #user > .register > form > table tr {
-        }
-        #user > .register > form > table tr > td {
-            display: table-cell;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        #user > .register > form > table tr > td:nth-of-type(1) {
-            width: 105px;
-            height: auto;
-            background: #f5f8f9;
-        }
-        #user > .register > form > table tr > td > input {
-            border:1px solid #e9e9e9;
-            padding: 3px;
-            background: #f7f7f7;
-        }
-
-        #user > .register > form > table tr > td > button {
-            border: none;
-            vertical-align: middle;
-        }
-
-    </style>
-
 </head>
 <body>
     <div id = "wrapper">
@@ -66,68 +12,67 @@
         </header>
         <main id="user">
             <section class="register">
-                <form action="#">
+                <form action="">
                     <table border="1">
                         <caption>사이트 이용정보 입력</caption>
                         <tr>
                             <td>아이디</td>
                             <td>
                                 <input type="text" name="uid" placeholder="아이디 입력">
-                                <button><img src="../img/chk_id.gif"></button>
+                                <button type="button"><img src="../img/chk_id.gif" alt="중복확인"></button>
+                                <span class="uidResult"></span>
                             </td>
-                            
+                
                         </tr>
-        
                         <tr>
                             <td>비밀번호</td>
-                            <td><input type="password" name="pass" placeholder="비밀번호 입력"></td>
+                            <td><input type="password" name="pass1" placeholder="비밀번호 입력"></td>
                         </tr>
-        
                         <tr>
-                            <td>비밀번호 확인</td>
-                            <td><input type="password" name="passchk" placeholder="비밀번호 확인 입력"></td>
+                            <td>아이디</td>
+                            <td><input type="password" name="pass2" placeholder="비밀번호 입력 확인"></td>
                         </tr>
                     </table>
-
+    
                     <table border="1">
                         <caption>개인정보 입력</caption>
                         <tr>
                             <td>이름</td>
-                            <td><input type="text" name="name" placeholder="이름 입력"></td>
+                            <td>
+                                <input type="text" name="name" placeholder="이름 입력">
+                            </td>
+                
                         </tr>
-        
                         <tr>
                             <td>별명</td>
                             <td>
-                                <p>공백없이 한글, 영문, 숫자만 입력가능</p>
-                                <input type="text" name="nickname" placeholder="별명 입력">
+                                <input type="text" name="nick" placeholder="별명 입력">
+                                <button type="button"><img src="../img/chk_id.gif" alt="중복확인"></button>
+                                <span class="nickResult"></span>
                             </td>
                         </tr>
-        
                         <tr>
-                            <td>Email</td>
-                            <td><input type="text" name="email" placeholder="이메일 입력"></td>
+                            <td>이메일</td>
+                            <td><input type="email" name="email" placeholder="이메일 입력"></td>
                         </tr>
-
                         <tr>
                             <td>휴대폰</td>
-                            <td><input type="text" name="hp" placeholder="-포함 13자리 입력"></td>
+                            <td><input type="text" name="hp" placeholder="- 포함 13자리 입력"></td>
                         </tr>
                         <tr>
                             <td>주소</td>
                             <td>
-                                <input type="text" name = "zipcode" placeholder="우편번호">
-                                <button><img src="../img/chk_post.gif"></button>
-                                <input type="text" name = "addr1" placeholder="주소를 검색하세요.">
-                                <input type="text" name = "addr2" placeholder="상세주소를 입력하세요.">
+                                <input type="text" name="zip" placeholder="우편번호">
+                                <button type="button"><img src="../img/chk_post.gif" alt="우편번호찾기"></button>
+                                <input type="text" name="addr1" placeholder="주소 검색">
+                                <input type="text" name="addr2" placeholder="상세주소 입력">
                             </td>
                         </tr>
                     </table>
-                    <p>                        
-                        <input type="button" value="취소">
-                        <input type="submit" value="회원가입">
-                    </p>
-
+                    <div>
+                        <a href="#" class="btn btnCancel">취소</a>
+                        <input type="submit" value="회원가입" class="btn btnRegister">
+                    </div>
                 </form>
             </section>
         </main>
