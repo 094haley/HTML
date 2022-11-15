@@ -176,9 +176,9 @@
         main > .latest > div > img {position: absolute; bottom: 16px;}
         main > .latest > div > table {
             position: absolute;
-            width: 210px;
+            width: 204px;
             right: 10px;
-            bottom: 16px;
+            bottom: 13px;
         }
 
         main > .latest > div > table td {
@@ -237,7 +237,6 @@
             box-sizing: border-box;
         }
 
-        footer > img {}
         footer > p {
             float: right;
             font-size: 11px;
@@ -245,6 +244,7 @@
             margin-top: 26px;
             margin-right: 16px;
             line-height: 18px;
+            letter-spacing: -0.5px;
         }
 
         footer > p > em {font-weight: bold; color: #888;}
