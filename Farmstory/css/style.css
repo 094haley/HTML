@@ -225,7 +225,7 @@
 
         main > .info > div > .account {line-height: 18px; color: #666;}
 
-        /* 위젯 탭 설정 */
+        /* 위젯 탭 설정
         .ui-widget.ui-widget-content {
             border: none;
         }
@@ -271,8 +271,7 @@
         #tabs .txt > li > a {
             color: #666;
         }
-
-        /* 탭
+        */
         
         #tabs {
             margin-top: 5px;
@@ -292,10 +291,14 @@
             line-height: 26px;
             padding: 0 5px;
             border: 1px solid #d1d1d1;
-            border-bottom: none;
+            border-bottom: 1px solid #aaaaaa;
             box-sizing: border-box;
             background-color: #f3f3f3;
-            z-index: -1;
+         }
+
+         #tabs > ul > .off:hover {
+            border: 1px solid #aaaaaa;
+            background-color: #e1dede
          }
          
          #tabs > ul > .on {
@@ -322,7 +325,7 @@
         #tabs .txt > li > a {
             color: #666;
         }
-        */
+        
 
 
         /* 푸터 */
